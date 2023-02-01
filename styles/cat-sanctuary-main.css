@@ -1,0 +1,41 @@
+/* custome color */
+:root {
+    --global-color-1: #0000ff;
+    --global-color-2: #f38508;
+}
+/*styles for the elements*/
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 100%;
+}
+h1, h2 {
+    color: var(--global-color-1);
+}
+/*styles for the header*/
+header img {
+    float:left
+}
+h1 {
+    font-size: 200%;
+}
+.center {
+    text-align: center;
+    color: var(--global-color-1)
+}
+/*styles for the main*/
+main {
+    clear: left;
+}
+h2 {
+    font-size: 150%;
+}
+main li {
+    font-size: 90%;
+    color: var(--global-color-2);
+}
+/* styles for the footer*/
+#copyright { 
+    color: var(--global-color-1);
+    font-size: 80%;
+    text-align: center;
+}
