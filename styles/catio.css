@@ -86,7 +86,7 @@ header blockquote {
 }
 
 #nav_menu ul li a.current {
-    color: yellow;
+    color: orangered;
 }
 
 #nav_menu ul ul {
