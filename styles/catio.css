@@ -95,32 +95,6 @@ header blockquote {
     top: 100%;
 }
 
-#nav_menu ul ul li {
-    float: none;
-}
-
-#nav_menu ul li:hover>ul {
-    display: block;
-}
-
-#nav_menu>ul::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
-/*styles for the aside*/
-aside {
-    margin: 0 20px 10px;
-    width: 150px;
-    float: left;
-    border: 1px solid black;
-}
-
-aside ul {
-    list-style-type: none;
-}
-
 /*styles for the main*/
 main {
     clear: right;
@@ -132,8 +106,8 @@ h2 {
     Padding: 10px 0;
 }
 
-main blockquote {
-    padding-top: 2em;
+section {
+    color: var(--global-color-1);
 }
 
 /* styles for the footer*/

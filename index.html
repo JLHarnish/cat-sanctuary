@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <!--I'm not sure this is a great way to describe the content-->
@@ -7,33 +8,78 @@
     <title>Joy's Cat Sanctuary</title>
     <link rel="stylesheet" href="styles/cat-sanctuary-main.css">
 </head>
+
 <body>
     <header>
         <img src="images/sanctuary.jpg" alt="Cat Sanctuary" height="200">
         <h1 class="center">Joy's Cat Sanctuary</h1>
         <!--Adding a link to the definition of what a clowder is for those who want to know-->
-        <p>What started out as just one kitten for companionship quickly escalated into this <a href="https://www.merriam-webster.com/dictionary/clowder"> clowder</a> of floofs.</p>
+        <p>What started out as just one kitten for companionship quickly escalated into this
+            <a href="https://www.merriam-webster.com/dictionary/clowder" target="_blank"> clowder</a> of floofs.
+        </p>
         <!--This is the perfect quote to how this went from 1 cat to 4 so quickly but not certain this is where is should go on the page-->
         <blockquote>
             <em>“One cat just leads to another.”</em> ~Ernest Hemingway
         </blockquote>
     </header>
-    <main>
+    <!--Adding a navagation menu across the page-->
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="Catio.html">Catios</a></li>
+            <li><a href="about_me.html">About Me</a></li>
+            <li><a href="floofs.html">The Floofs</a></li>
+            <!--Getting HTML pages for each cat set up and then hopefully will have them 
+            listed as a horizontal navigation menu when ready-->
+        </ul>
+    </nav>
+    <aside>
         <h2>Cat Sanctuary Residents</h2>
-            <p> In order of arrival</p>
-        <ol>
+        <ul>
             <li><strong>Jedi Night</strong></li>
-            <img src="images/Jedi.jpg" alt="Photo of Jedi Night" height="200">
+            <img src="images/Jedi.jpg" alt="Photo of Jedi Night" height="200" width="150">
             <li><strong>Gizmo</strong></li>
-            <img src="images/Gizmo.jpg" alt="Photo of Gizmo" height="200">
+            <img src="images/Gizmo.jpg" alt="Photo of Gizmo" height="200" width="150">
             <li><strong>Pepper</strong></li>
-            <img src="images/Pepper.jpg" alt="Photo of Pepper" height="200">
+            <img src="images/Pepper.jpg" alt="Photo of Pepper" height="200" width="150">
             <li><strong>Dorian Gray "The Stray"</strong></li>
-            <img src="images/Dorian.jpg" alt="Photo of Dorian Gray the stray" height="200">
-        </ol>
+            <img src="images/Dorian.jpg" alt="Photo of Dorian Gray the stray" height="200" width="150">
+        </ul>
+    </aside>
+    <main>
+        <article>
+            <h2>About Cats</h2>
+            <p>Cats are one of the most popular pets in the world, known for their playful and affectionate nature, as
+                well as their independence. They belong to the scientific family Felidae and the species Felis catus.
+            </p>
+
+            <p><br>Cats have been domesticated for thousands of years, and were first kept as pets by the ancient
+                Egyptians. They are highly adaptable and can thrive in both indoor and outdoor environments.</p>
+
+            <p><br>Cats have distinctive physical characteristics, including a flexible spine, retractable claws, and
+                exceptional agility. They also have an excellent sense of balance, a keen sense of hearing and smell,
+                and are known for their grooming habits.</p>
+
+            <p><br>In terms of behavior, cats are known for their tendency to nap frequently, as well as their love of
+                playing with toys and scratching surfaces. They are also known for their tendency to purr when they are
+                happy or content.</p>
+
+            <p><br>Overall, cats make great pets for people who are looking for a low-maintenance and affectionate
+                companion. They offer comfort and companionship, and have been shown to have positive effects on their
+                owners' mental and emotional well-being.</p>
+            </p>
+            <blockquote>
+                <em>
+                    "In ancient times cats were worshipped as gods; they have not forgotten this."
+                    ~ Terry Pratchett
+                </em>
+            </blockquote>
+        </article>
     </main>
     <footer>
+        <p><a href="#">Return to top</a></p>
         <p id="copyright">&copy; 2023 Joy Harnish</p>
     </footer>
 </body>
+
 </html>
