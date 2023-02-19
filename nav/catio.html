@@ -7,6 +7,14 @@
 	<meta name="description" content="A Cat Sanctuary for random cats that needed a home">
 	<title>Joy's Cat Sanctuary</title>
 	<link rel="stylesheet" href="../styles/catio.css">
+	<link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
 </head>
 
 <body>
@@ -21,6 +29,7 @@
 			<em>“One cat just leads to another.”</em> ~Ernest Hemingway
 		</blockquote>
 	</header>
+	<nav id="mobile_menu"></nav>
 	<nav id="nav_menu">
 		<ul>
 			<li><a href="../index.html">Home</a></li>

@@ -17,7 +17,7 @@ html {
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 100%;
-    width: 800px;
+    width: 90%;
     margin: 0 auto;
     border: 5px solid var(--global-color-1);
 }
@@ -26,7 +26,7 @@ main,
 aside,
 footer {
     margin: 0;
-    padding: 0px 20px;
+    padding: 0px 2.5%px;
 }
 
 a:focus,
@@ -61,49 +61,42 @@ h1 {
 }
 
 header blockquote {
-    padding: 15px 0;
+    padding: 1.875% 0;
 }
 
 /*styles fOr the navigation menu*/
 #nav_menu ul {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+    background-color: blue;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-
 #nav_menu ul li {
-    float: left;
+    flex-basis: 25%;
 }
-
 #nav_menu ul li a {
     text-align: center;
     display: block;
-    width: 196px;
-    padding: 1em 0;
     text-decoration: none;
     background-color: blue;
     color: white;
     font-weight: bold;
-    border: 2px solid white;
-}
+ }
 
-#nav_menu ul li a.current {
+#nav_menu a.current {
     color: orangered;
 }
-
-#nav_menu ul ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-}
-
 /*styles for the main*/
 main {
-    clear: right;
-    padding-right: 40px;
+    padding-right: 5%;
 }
 
 h2 {
     font-size: 150%;
-    Padding: 10px 0;
+    Padding: 1.25% 0;
 }
 
 section {

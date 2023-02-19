@@ -7,6 +7,14 @@
     <meta name="description" content="A Cat Sanctuary for random cats that needed a home">
     <title>Joy's Cat Sanctuary</title>
     <link rel="stylesheet" href="styles/cat-sanctuary-main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+        });
+    </script>
 </head>
 
 <body>
@@ -23,6 +31,7 @@
         </blockquote>
     </header>
     <!--Adding a navagation menu across the page-->
+    <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
         <ul>
             <li><a href="index.html" class="current">Home</a></li>
@@ -33,20 +42,22 @@
             listed as a verticle navigation menu when ready-->
         </ul>
     </nav>
-    <aside>
-        <h2>Cat Sanctuary Residents</h2>
-        <ul>
-            <li><strong>Jedi Night</strong></li>
-            <img src="images/Jedi.jpg" alt="Photo of Jedi Night" height="200" width="150">
-            <li><strong>Gizmo</strong></li>
-            <img src="images/Gizmo.jpg" alt="Photo of Gizmo" height="200" width="150">
-            <li><strong>Pepper</strong></li>
-            <img src="images/Pepper.jpg" alt="Photo of Pepper" height="200" width="150">
-            <li><strong>Dorian Gray "The Stray"</strong></li>
-            <img src="images/Dorian.jpg" alt="Photo of Dorian Gray the stray" height="200" width="150">
-        </ul>
-    </aside>
     <main>
+        <aside>
+            <h2>Cat Sanctuary Residents</h2>
+            <div id="Cats">
+            <ul>
+                <li><strong>Jedi Night</strong></li>
+                <img src="images/Jedi.jpg" alt="Photo of Jedi Night">
+                <li><strong>Gizmo</strong></li>
+                <img src="images/Gizmo.jpg" alt="Photo of Gizmo">
+                <li><strong>Pepper</strong></li>
+                <img src="images/Pepper.jpg" alt="Photo of Pepper">
+                <li><strong>Dorian Gray "The Stray"</strong></li>
+                <img src="images/Dorian.jpg" alt="Photo of Dorian Gray the stray">
+            </ul>
+            </div>
+        </aside>
         <article>
             <h2>About Cats</h2>
             <p>Cats are one of the most popular pets in the world, known for their playful and affectionate nature, as
