@@ -1,4 +1,4 @@
-/*custom property*/
+/*styles for the elements*/
 * {
     margin: 0;
     padding: 0;
@@ -13,20 +13,20 @@ html {
     --global-color-1: #0000ff;
 }
 
-/*styles for the elements*/
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 100%;
-    width: 90%;
+    width: 98%;
+    max-width: 960px;
     margin: 0 auto;
     border: 5px solid var(--global-color-1);
-}
-
-main,
-aside,
-footer {
-    margin: 0;
-    padding: 0px 2.5%;
+    display: grid;
+    grid-template: repeat(4, auto) / 1fr;
+    grid-template-areas:
+        "head"
+        "navi"
+        "main"
+        "foot";
 }
 
 a:focus,
@@ -41,9 +41,10 @@ h2 {
 
 /*styles for the header*/
 header {
-    padding: 2em 0 5em 0;
+    padding: 2em 0 3em 0;
     border: 3px solid var(--global-color-1);
     background-image: linear-gradient(33deg, red 0%, orange 30%, yellow 50%, orange 80%, red 100%);
+    grid-area: head;
 }
 
 header img {
@@ -65,18 +66,19 @@ header blockquote {
 }
 
 /*styles fOr the navigation menu*/
+#nav_menu {
+    grid-area: navi;
+}
+
 #nav_menu ul {
-    display: flex;
-    flex-basis: 100%;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template: auto / repeat(4, 1fr);
     background-color: blue;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-#nav_menu ul li {
-    flex-basis: 25%;
-}
+
 #nav_menu ul li a {
     display: block;
     text-align: center;
@@ -86,76 +88,131 @@ header blockquote {
     color: white;
     font-weight: bold;
 }
+
 #nav_menu a.current {
     color: orangered;
 }
+
 /*styles for the main*/
 main {
-    display: flex;
+    grid-area: main;
+    display: grid;
+    grid-template: auto / 25% auto;
+    grid-gap: 3%;
 }
-h2 {
-    font-size: 150%;
-    Padding: 1.25% 0;
-}
-/*styles for the aside*/
-aside {
-    flex-basis: 30%;
-    margin: 0 2.5% 0 1.25%;
-    width: 18.75%;
-}
-aside ul {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-}
+
 /*styles for the article*/
 article {
-    flex-basis: 70%;
+    padding: 20px 3.7% 20px 0;
+    grid-row: 1 / 2;
+    grid-column: 2 / 2;
 }
+
+article h1 {
+    font-size: 150%;
+    padding: 1em 0 .25em 0;
+    margin: 0;
+}
+
+article blockquote {
+    padding: 2em;
+}
+/* the styles for the aside */
+
+aside {
+    padding: 0 0 20px 8.3%;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+aside h2 {
+    color: var(--global-color-1);
+    font-size: 130%;
+    padding: .5em 0 .25em 0;
+}
+
+aside img {
+    padding-bottom: 1em;
+    max-width: 100%;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
 /* styles for the footer*/
 #copyright {
     color: var(--global-color-1);
     font-size: 80%;
     text-align: center;
+    grid-area: foot;
 }
-#mobile_menu {
-    display: none;
-}
-@media only screen and (max-width: 1200px) {
-	main { display: flex;}
-	article { order: 2;}
-	aside { order: 1;}
-	article h2,
-	aside h2 {
-		font-size: 100%;
-	}
-}
-@media only screen and (max-width: 900px) {
-	header img { float: none;}
-	header { text-align: center;}
-	main { flex-direction: column;}
-	article { 
-		order: 1;
-		width: 95%;
-	}
-	aside { 
-		order: 2; 
-		padding-right: 2.5%;
-		width: 95%;
-	}
-    #Cats {
-        column-count: 2;
-    }
-    #nav_menu {
+    #mobile_menu {
         display: none;
     }
-    #mobile_menu {
-        display: block;
+
+    @media only screen and (max-width: 960px) {
+        main {
+            display: flex;
+        }
+
+        article {
+            order: 2;
+        }
+
+        aside {
+            order: 1;
+        }
+
+        article h2,
+        aside h2 {
+            font-size: 100%;
+        }
     }
-    .slicknav_menu {
-        background-color: blue !important;
+
+    @media only screen and (max-width: 900px) {
+        header img {
+            float: none;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        main {
+            flex-direction: column;
+        }
+
+        article {
+            order: 1;
+            width: 95%;
+        }
+
+        aside {
+            order: 2;
+            padding-right: 2.5%;
+            width: 95%;
+        }
+
+        #Cats {
+            column-count: 2;
+        }
+
+        #nav_menu {
+            display: none;
+        }
+
+        #mobile_menu {
+            display: block;
+        }
+
+        .slicknav_menu {
+            background-color: blue !important;
+        }
     }
-}
-@media only screen and (max-width: 500px) {
-	body { font-size: 90%; }
-}
+
+    @media only screen and (max-width: 500px) {
+        body {
+            font-size: 90%;
+        }
+    }
