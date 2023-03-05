@@ -1,0 +1,26 @@
+change the font size on your quote, 
+thats on top of your website.
+
+centered the return to top link
+at the bottom of the main page
+
+the "catios" navigation menu link, 
+the header expands slightly on the 
+bottom instead of staying uniform 
+like the other links
+
+
+I changed the size, font and color 
+of the the block quote located in the header.
+
+Centered the return to top link on the Home page
+and Catio pages.
+
+The Catio page no longer expands and all headers
+ are uniform when switching between pages.
+
+ I added a table in The Floofs page.
+ I added two different fonts from Google fonts.
+ I added a favicon to my website.
+ I also added paw icons to the navigation menu as 
+ well as in various places on the Home page.

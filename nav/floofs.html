@@ -6,7 +6,19 @@
     <!--I'm not sure this is a great way to describe the content-->
     <meta name="description" content="A Cat Sanctuary for random cats that needed a home">
     <title>Joy's Cat Sanctuary</title>
-    <link rel="stylesheet" href="../styles/cat-sanctuary-main.css">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/floofs.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="https://kit.fontawesome.com/0e60054162.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+        });
+    </script>
 </head>
 
 <body>
@@ -21,22 +33,68 @@
             <em>“One cat just leads to another.”</em> ~Ernest Hemingway
         </blockquote>
     </header>
-    <nav id="nav_menu">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="catio.html">Catios</a></li>
-            <li><a href="about_me.html">About Me</a></li>
-            <li><a href="floofs.html" class="current">The Floofs</a></li>     
-        </ul>
+    <nav id="mobile_menu">
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../nav/floofs.html" class="current">The Floofs <i class="fas fa-paw"></i></a></li>
+                <!--Having trouble getting this to display 
+                    <ul>
+                    <li><a href="../floofs/Jedi.html" target="_blank"> Jedi Night</a></li>
+                    <li><a href="../floofs/Gizmo.html" target="_blank">Gizmo</a></li>
+                    <li><a href="../floofs/Pepper.html" target="_blank">Pepper</a></li>
+                    <li><a href="../floofs/Dorian.html" target="_blank">Dorian Gray</a></li>
+                </ul>-->
+                <li><a href="catio.html">Catios</a></li>
+                <li><a href="about_me.html">About Me</a></li>
+            </ul>
+        </nav>
     </nav>
 
     <main>
-        <p>
-            Under Construction
-        </p>
+        <figure>
+            <figcaption>Birthdays <i class="fas fa-paw"></i></figcaption>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Birthdate</th>
+                        <th>Year</th>
+                        <th>Element</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jedi Night</td>
+                        <td>September 1</td>
+                        <td>2020</td>
+                        <td>Earth</td>
+                    </tr>
+                    <tr>
+                        <td>Gizmo</td>
+                        <td>March 1</td>
+                        <td>2021</td>
+                        <td>Air</td>
+                    </tr>
+                    <tr>
+                        <td>Pepper</td>
+                        <td>October 1</td>
+                        <td>2020</td>
+                        <td>Fire</td>
+                    </tr>
+                    <tr>
+                        <td>Dorian Gray</td>
+                        <td>April 1</td>
+                        <td>2021</td>
+                        <td>Water</td>
+                    </tr>
+                </tbody>
+            </table>
+        </figure>
         <footer>
             <p id="copyright">&copy; 2023 Joy Harnish</p>
         </footer>
     </main>
 </body>
+
 </html>

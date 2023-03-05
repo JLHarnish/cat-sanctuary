@@ -53,7 +53,12 @@ header img {
 }
 
 h1 {
-    font-size: 200%;
+    font-size: 250%;
+    font-family: "Rampart One", sans-serif;
+}
+header p {
+    padding: 2em;
+    text-align: center;
 }
 
 .center {
@@ -62,7 +67,11 @@ h1 {
 }
 
 header blockquote {
-    padding: 1.875% 0;
+    font-size: 150%;
+    font-family: "Mynerve", sans-serif;
+    color: green;
+    text-align: right;
+    padding: 0 2em;
 }
 
 /*styles fOr the navigation menu*/
@@ -88,6 +97,13 @@ header blockquote {
     color: white;
     font-weight: bold;
 }
+#nav_menu ul ul li a {
+    display:grid;
+    text-align: center;
+    
+
+}
+
 
 #nav_menu a.current {
     color: orangered;
@@ -100,7 +116,13 @@ main {
     grid-template: auto / 25% auto;
     grid-gap: 3%;
 }
-
+h2 {
+    font-family: "Mynerve", sans-serif;
+}
+i {
+   color: orange;
+   font-size: 1em;
+}
 /*styles for the article*/
 article {
     padding: 20px 3.7% 20px 0;
@@ -108,15 +130,20 @@ article {
     grid-column: 2 / 2;
 }
 
-article h1 {
-    font-size: 150%;
-    padding: 1em 0 .25em 0;
+article h2 {
+    font-size: 3em;
+    padding: .25em 0 .25em 0;
     margin: 0;
 }
 
 article blockquote {
-    padding: 2em;
+    color: orchid;
+    font-size: 4em;
+    text-align: center;
+    padding: .75em;
+    font-family: "Mynerve", sans-serif;
 }
+
 /* the styles for the aside */
 
 aside {
@@ -127,7 +154,7 @@ aside {
 
 aside h2 {
     color: var(--global-color-1);
-    font-size: 130%;
+    font-size: 2em;
     padding: .5em 0 .25em 0;
 }
 
@@ -141,78 +168,82 @@ aside ul {
 }
 
 /* styles for the footer*/
+footer {
+    text-align: center;
+}
 #copyright {
     color: var(--global-color-1);
     font-size: 80%;
     text-align: center;
     grid-area: foot;
 }
-    #mobile_menu {
+
+#mobile_menu {
+    display: none;
+}
+
+@media only screen and (max-width: 960px) {
+    main {
+        display: flex;
+    }
+
+    article {
+        order: 2;
+    }
+
+    aside {
+        order: 1;
+    }
+
+    article h2,
+    aside h2 {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    header img {
+        float: none;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    article {
+        order: 1;
+        width: 95%;
+    }
+
+    aside {
+        order: 2;
+        padding-right: 2.5%;
+        width: 95%;
+    }
+
+    #Cats {
+        column-count: 2;
+    }
+
+    #nav_menu {
         display: none;
     }
 
-    @media only screen and (max-width: 960px) {
-        main {
-            display: flex;
-        }
-
-        article {
-            order: 2;
-        }
-
-        aside {
-            order: 1;
-        }
-
-        article h2,
-        aside h2 {
-            font-size: 100%;
-        }
+    #mobile_menu {
+        display: block;
     }
 
-    @media only screen and (max-width: 900px) {
-        header img {
-            float: none;
-        }
-
-        header {
-            text-align: center;
-        }
-
-        main {
-            flex-direction: column;
-        }
-
-        article {
-            order: 1;
-            width: 95%;
-        }
-
-        aside {
-            order: 2;
-            padding-right: 2.5%;
-            width: 95%;
-        }
-
-        #Cats {
-            column-count: 2;
-        }
-
-        #nav_menu {
-            display: none;
-        }
-
-        #mobile_menu {
-            display: block;
-        }
-
-        .slicknav_menu {
-            background-color: blue !important;
-        }
+    .slicknav_menu {
+        background-color: blue !important;
     }
+}
 
-    @media only screen and (max-width: 500px) {
-        body {
-            font-size: 90%;
-        }
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 90%;
     }
+}

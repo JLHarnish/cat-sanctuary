@@ -6,15 +6,19 @@
 	<!--I'm not sure this is a great way to describe the content-->
 	<meta name="description" content="A Cat Sanctuary for random cats that needed a home">
 	<title>Joy's Cat Sanctuary</title>
+	<link rel="shortcut icon" href="../images/favicon.ico">
 	<link rel="stylesheet" href="../styles/catio.css">
-	<link rel="stylesheet" href="styles/slicknav.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
+	<link rel="stylesheet" href="../styles/slicknav.css">
+	<link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="https://kit.fontawesome.com/0e60054162.js" crossorigin="anonymous"></script>
 	<script type="text/javascript">
-    	$(document).ready(function(){
-			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
-    	});
-    </script>
+		$(document).ready(function () {
+			$('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+		});
+	</script>
 </head>
 
 <body>
@@ -22,8 +26,9 @@
 		<img src="../images/sanctuary.jpg" alt="Cat Sanctuary" height="200">
 		<h1 class="center">Joy's Cat Sanctuary</h1>
 		<!--Adding a link to the definiton of what a clouder is which opens in a new tab-->
-		<p>What started out as just one kitten for companionship quickly escalated into this 
-			<a href="https://www.merriam-webster.com/dictionary/clowder" target="_blank"> clowder</a> of floofs.</p>
+		<p>What started out as just one kitten for companionship quickly escalated into this
+			<a href="https://www.merriam-webster.com/dictionary/clowder" target="_blank"> clowder</a> of floofs.
+		</p>
 		<!--This is the perfect quote to how this went from 1 cat to 4 so quickly but not certain this is where is should go on the page-->
 		<blockquote>
 			<em>“One cat just leads to another.”</em> ~Ernest Hemingway
@@ -33,9 +38,10 @@
 	<nav id="nav_menu">
 		<ul>
 			<li><a href="../index.html">Home</a></li>
-			<li><a href="catio.html" class="current">Catios</a></li>
-			<li><a href="about_me.html">About Me</a></li>
 			<li><a href="floofs.html">The Floofs</a></li>
+			<li><a href="catio.html" class="current">Catios <i class="fas fa-paw"></i></a></li>
+			<li><a href="about_me.html">About Me</a></li>
+
 		</ul>
 	</nav>
 	<main>
@@ -66,10 +72,10 @@
 			safe and secure environment. It offers numerous benefits, not only for cats but also for the environment and
 			wildlife. Whether you build a simple or elaborate structure, a catio can be a great addition to any home.
 		</p>
-		<p><a href="#top">Return to top</a></p>
+		
 	</main>
-
 	<footer>
+		<p><a href="#top">Return to top</a></p>
 		<p id="copyright">&copy; 2023 Joy Harnish</p>
 	</footer>
 </body>

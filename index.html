@@ -6,15 +6,20 @@
     <!--I'm not sure this is a great way to describe the content-->
     <meta name="description" content="A Cat Sanctuary for random cats that needed a home">
     <title>Joy's Cat Sanctuary</title>
+    <link rel="shortcut icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="styles/cat-sanctuary-main.css">
     <link rel="stylesheet" href="styles/slicknav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.slicknav.min.js"></script>
+    <script src="https://kit.fontawesome.com/0e60054162.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
         });
     </script>
+
 </head>
 
 <body>
@@ -34,10 +39,10 @@
     <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
         <ul>
-            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="index.html" class="current">Home <i class="fas fa-paw"></i></a></li>
+            <li><a href="nav/floofs.html">The Floofs</a></li>
             <li><a href="nav/catio.html">Catios</a></li>
             <li><a href="nav/about_me.html">About Me</a></li>
-            <li><a href="nav/floofs.html">The Floofs</a></li>
             <!--Getting HTML pages for each cat set up and then hopefully will have them 
             listed as a verticle navigation menu when ready-->
         </ul>
@@ -46,20 +51,21 @@
         <aside>
             <h2>Cat Sanctuary Residents</h2>
             <div id="Cats">
-            <ul>
-                <li><strong>Jedi Night</strong></li>
-                <img src="images/Jedi.jpg" alt="Photo of Jedi Night">
-                <li><strong>Gizmo</strong></li>
-                <img src="images/Gizmo.jpg" alt="Photo of Gizmo">
-                <li><strong>Pepper</strong></li>
-                <img src="images/Pepper.jpg" alt="Photo of Pepper">
-                <li><strong>Dorian Gray "The Stray"</strong></li>
-                <img src="images/Dorian.jpg" alt="Photo of Dorian Gray the stray">
-            </ul>
+                <ul>
+                    <li><i class="fas fa-paw"></i> <strong>Jedi Night</strong>
+                    </li>
+                    <img src="images/Jedi.jpg" alt="Photo of Jedi Night">
+                    <li><strong>Gizmo</strong> <i class="fas fa-paw"></i></li>
+                    <img src="images/Gizmo.jpg" alt="Photo of Gizmo">
+                    <li><i class="fas fa-paw"></i> <strong>Pepper</strong></li>
+                    <img src="images/Pepper.jpg" alt="Photo of Pepper">
+                    <li><strong>Dorian Gray "The Stray"</strong> <i class="fas fa-paw"></i></li>
+                    <img src="images/Dorian.jpg" alt="Photo of Dorian Gray the stray">
+                </ul>
             </div>
         </aside>
         <article>
-            <h2>About Cats</h2>
+            <h2>Cats <i class="fas fa-paw"></i></h2>
             <p>Cats are one of the most popular pets in the world, known for their playful and affectionate nature, as
                 well as their independence. They belong to the scientific family Felidae and the species Felis catus.
             </p>
@@ -81,7 +87,7 @@
             <blockquote>
                 <em>
                     "In ancient times cats were worshipped as gods; they have not forgotten this."
-                    ~ Terry Pratchett
+                    <br>~ Terry Pratchett
                 </em>
             </blockquote>
         </article>

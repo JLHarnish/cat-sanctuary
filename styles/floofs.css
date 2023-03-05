@@ -113,27 +113,58 @@ header blockquote {
 #nav_menu a.current {
     color: orangered;
 }
-/*styles for the main*/
-main {
-    padding: .5em 1em;
-}
 
-h2 {
-    font-size: 150%;
-    Padding: 1.25% 0;
-}
 
-section {
+/*section {
     color: var(--global-color-1);
+}*/
+/*styles for figure and caption*/
+figure,
+figcaption {
+    margin: 0;
+    padding: 0;
 }
+
+figure {
+    border: 1px solid green;
+    padding: 2em;
+}
+
+figcaption {
+    display: block;
+    font-weight: bold;
+    text-align: left;
+    font-size: 120%;
+    padding-bottom: .25em;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid green;
+}
+
+th,
+td {
+    border: 1px solid green;
+    padding: .2em .7em;
+    text-align: right;
+}
+
+th.left,
+td.left {
+    text-align: left;
+}
+
 i {
-	color: orange;
-	font-size: 1em;
-	}
+    color: orange;
+    font-size: 1em;
+}
+
 /* styles for the footer*/
 footer {
     text-align: center;
 }
+
 #copyright {
     color: var(--global-color-1);
     font-size: 80%;
