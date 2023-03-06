@@ -1,3 +1,5 @@
+
+The peer suggestions are as follows
 change the font size on your quote, 
 thats on top of your website.
 
@@ -23,4 +25,4 @@ The Catio page no longer expands and all headers
  I added two different fonts from Google fonts.
  I added a favicon to my website.
  I also added paw icons to the navigation menu as 
- well as in various places on the Home page.
+ well as in various places on nav pages.
