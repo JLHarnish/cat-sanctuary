@@ -24,6 +24,5 @@ The Catio page no longer expands and all headers
  I added a table in The Floofs page.
  I added two different fonts from Google fonts.
  I added a favicon to my website. 
- However it doesn't seem to work in gitpages.
  I also added paw icons to the navigation menu as 
  well as in various places on nav pages.
