@@ -69,7 +69,7 @@ header p {
 header blockquote {
     font-size: 150%;
     font-family: "Mynerve", sans-serif;
-    color: green;
+    color: var(--global-color-1);
     text-align: right;
     padding: 0 2em;
 }
@@ -169,13 +169,13 @@ aside ul {
 
 /* styles for the footer*/
 footer {
+    grid-area: foot;
     text-align: center;
 }
 #copyright {
     color: var(--global-color-1);
     font-size: 80%;
-    text-align: center;
-    grid-area: foot;
+    
 }
 
 #mobile_menu {

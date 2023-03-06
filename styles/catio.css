@@ -41,28 +41,27 @@ h2 {
 
 /*styles for the header*/
 header {
-    padding: 2em 0em 3em 0;
+    padding: 2em 0 3em 0;
     border: 3px solid var(--global-color-1);
     background-image: linear-gradient(33deg, red 0%, orange 30%, yellow 50%, orange 80%, red 100%);
     grid-area: head;
-
 }
 
 header img {
     float: left;
     padding: 0 5%;
-    
 }
 
 h1 {
     font-size: 250%;
-    font-family: "Rampart One", sans-serif; 
+    font-family: "Rampart One", sans-serif;
 }
 
 header p {
     padding: 2em;
     text-align: center;
 }
+
 .center {
     text-align: center;
     color: var(--global-color-1)
@@ -71,11 +70,11 @@ header p {
 header blockquote {
     font-size: 150%;
     font-family: "Mynerve", sans-serif;
-    color: green;
+    color: var(--global-color-1);
     text-align: right;
     padding: 0 2em;
 }
- 
+
 /*styles fOr the navigation menu*/
 #nav_menu {
     grid-area: navi;
@@ -100,43 +99,121 @@ header blockquote {
     font-weight: bold;
 }
 
-#nav_menu ul ul li {
-    display: inline-block;
+#nav_menu ul ul li a {
+    display: grid;
     text-align: center;
-    padding: 1em 0;
-    text-decoration: none;
-    background-color: blue;
-  
-    font-weight: bold;
 }
+
 
 #nav_menu a.current {
     color: orangered;
 }
+
 /*styles for the main*/
 main {
-    padding: .5em 1em;
+    grid-area: main;
+    display: block;
 }
-
-h2 {
-    font-size: 150%;
-    Padding: 1.25% 0;
-}
-
-section {
-    color: var(--global-color-1);
-}
-i {
-	color: orange;
-	font-size: 1em;
-	}
-/* styles for the footer*/
-footer {
+main i {
+    display: inline-block;
+    width: 100%;
+    font-size: 3em;
     text-align: center;
 }
+main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 0.5em;
+}  
+main section {
+    display: block;
+    padding:.5em 1em;
+}
+main h2 {
+    font-family: "Mynerve", sans-serif;
+    font-size: 200%;
+    text-align: center;
+}
+
+i {
+    color: orange;
+    font-size: 1em;
+}
+
+/* styles for the footer*/
+footer {
+    grid-area: foot;
+    text-align: center;
+}
+
 #copyright {
     color: var(--global-color-1);
     font-size: 80%;
-    text-align: center;
-    clear: both;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+@media only screen and (max-width: 960px) {
+    main {
+        display: flex;
+    }
+
+    article {
+        order: 2;
+    }
+
+    aside {
+        order: 1;
+    }
+
+    article h2,
+    aside h2 {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    header img {
+        float: none;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    article {
+        order: 1;
+        width: 95%;
+    }
+
+    aside {
+        order: 2;
+        padding-right: 2.5%;
+        width: 95%;
+    }
+    #nav_menu {
+        display: none;
+    }
+
+    #mobile_menu {
+        display: block;
+    }
+
+    .slicknav_menu {
+        background-color: blue !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 90%;
+    }
 }

@@ -6,9 +6,9 @@
     <!--I'm not sure this is a great way to describe the content-->
     <meta name="description" content="A Cat Sanctuary for random cats that needed a home">
     <title>Joy's Cat Sanctuary</title>
-    <link rel="shortcut icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../styles/about_me.css">
-    <link rel="stylesheet" href="styles/slicknav.css">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/styles/about_me.css">
+    <link rel="stylesheet" href="/styles/slicknav.css">
     <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -19,6 +19,7 @@
             $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
         });
     </script>
+
 </head>
 
 <body>
@@ -26,26 +27,49 @@
         <img src="../images/sanctuary.jpg" alt="Cat Sanctuary" height="200">
         <h1 class="center">Joy's Cat Sanctuary</h1>
         <!--Adding a link to the definition of what a clowder is for those who want to know-->
-        <p>What started out as just one kitten for companionship quickly escalated into this <a
-                href="https://www.merriam-webster.com/dictionary/clowder" target="_blank"> clowder</a> of floofs.</p>
+        <p>What started out as just one kitten for companionship quickly escalated into this
+            <a href="https://www.merriam-webster.com/dictionary/clowder" target="_blank"> clowder</a> of floofs.
+        </p>
         <!--This is the perfect quote to how this went from 1 cat to 4 so quickly but not certain this is where is should go on the page-->
         <blockquote>
             <em>“One cat just leads to another.”</em> ~Ernest Hemingway
         </blockquote>
     </header>
+    <!--Adding a navagation menu across the page-->
+    <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
         <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="floofs.html">The Floofs</a></li>
-            <li><a href="catio.html">Catios</a></li>
-            <li><a href="about_me.html" class="current">About Me <i class="fas fa-paw"></i></a></li>
-
+            <li><a href="../nav/floofs.html">The Floofs</a></li>
+            <li><a href="../nav/catio.html">Catios</a></li>
+            <li><a href="../nav/about_me.html" class="current">About Me <i class="fas fa-paw"></i></a></li>
+            <!--Getting HTML pages for each cat set up and then hopefully will have them 
+            listed as a verticle navigation menu when ready-->
         </ul>
     </nav>
     <main>
-        <p>
-            Under Construction
-        </p>
+        <i class="fas fa-paw"></i>
+        <section>
+            <p>
+                I enjoy being the Guardian to these four elements
+                known as my clowder. They keep me grounded and
+                they are quite the comedians.
+                I am currently training them to target a button for button training.
+                Three out of four will work for treats.
+            </p>
+            <p>My superpower is Patience. These little bundles of
+                contradiction have been helping me perfect it.
+            </p>
+            <p>Some of my other hobbies include reading,
+                learning new things, knitting, drawing,
+                painting and calligraphy.
+            </p>
+            <p>I also enjoy yoga, swimming, tai chi, and taekwondo.
+            </p>
+            <p>I like to travel but am a hermit and prefer
+                the ocean or mountains over cities.
+            </p>
+        </section>
     </main>
     <footer>
         <p id="copyright">&copy; 2023 Joy Harnish</p>
