@@ -122,6 +122,12 @@ main section {
     padding: 1em 1em;
 }
 
+main h2 {
+    font-family: "Mynerve", sans-serif;
+    font-size: 200%;
+    text-align: center;
+}
+
 i {
     color: orange;
     font-size: 1em;
