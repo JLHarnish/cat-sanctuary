@@ -106,7 +106,7 @@ header blockquote {
 /*styles for the main*/
 main article {
     padding: .5em 1em;
-    float: left;
+
 }
 
 main article h2 {
@@ -178,7 +178,7 @@ footer {
 
 @media only screen and (max-width: 900px) {
     header {
-        display: block;
+       text-align: center;
         font-size: 80%;
     }
 
