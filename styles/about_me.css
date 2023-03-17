@@ -52,9 +52,10 @@ header img {
     padding: 0 5%;
 }
 
-h1 {
-    font-size: 250%;
-    font-family: "Rampart One", sans-serif;
+h2 {
+    font-family: "Mynerve", sans-serif;
+    font-size: 200%;
+    text-align: center;
 }
 
 header p {
@@ -102,17 +103,20 @@ header blockquote {
 #nav_menu a.current {
     color: orangered;
 }
+
 /*styles for the main*/
 main {
     grid-area: main;
     display: block;
- }
- main i {
+}
+
+main i {
     display: inline-block;
     width: 100%;
     font-size: 3em;
     text-align: center;
 }
+
 main section {
     display: block;
     padding: 1em 1em;
@@ -133,9 +137,10 @@ footer {
     color: var(--global-color-1);
     font-size: 80%;
     text-align: center;
-    
+
 }
 
+/*styles for mobile*/
 #mobile_menu {
     display: none;
 }

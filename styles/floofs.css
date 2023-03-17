@@ -128,6 +128,7 @@ figure {
     margin: 0;
     padding: 1em;
 }
+
 figcaption {
     display: table-caption;
     caption-side: top;
@@ -168,40 +169,49 @@ footer {
 #copyright {
     color: var(--global-color-1);
     font-size: 80%;
-    text-align: center;
-    clear: both;
+
 }
 
+/*styles for mobile*/
 #mobile_menu {
     display: none;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 966px) {
+    header {
+        font-size: 90%;
+    }
+
+    header img {
+        height: 180px;
+    }
+
     main {
         display: flex;
     }
 
-    article {
+    figure {
         order: 2;
     }
 
-    aside {
+    section {
         order: 1;
     }
 
-    article h2,
-    aside h2 {
-        font-size: 100%;
+    footer {
+        order: 3;
+
     }
 }
 
 @media only screen and (max-width: 900px) {
-    header img {
-        float: none;
+    header {
+        display: block;
+        font-size: 80%;
     }
 
-    header {
-        text-align: center;
+    header img {
+        height: 160px;
     }
 
     main {
@@ -219,8 +229,6 @@ footer {
         width: 95%;
     }
 
-    #Cats {
-        column-count: 2;
     }
 
     #nav_menu {

@@ -114,23 +114,27 @@ main {
     grid-area: main;
     display: block;
 }
+
 main i {
     display: inline-block;
     width: 100%;
     font-size: 3em;
     text-align: center;
 }
+
 main img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     padding: 0.5em;
-}  
+}
+
 main section {
     display: block;
-    padding:.5em 1em;
+    padding: .5em 1em;
 }
+
 main h2 {
     font-family: "Mynerve", sans-serif;
     font-size: 200%;
@@ -153,6 +157,7 @@ footer {
     font-size: 80%;
 }
 
+/*styles for mobile*/
 #mobile_menu {
     display: none;
 }
@@ -199,6 +204,7 @@ footer {
         padding-right: 2.5%;
         width: 95%;
     }
+
     #nav_menu {
         display: none;
     }
