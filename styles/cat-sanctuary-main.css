@@ -49,10 +49,10 @@ header {
 
 header img {
     float: left;
-    padding: 0 5%;
+    padding: 0 3.75%;
 }
 
-h1 {
+header h1 {
     font-size: 250%;
     font-family: "Rampart One", sans-serif;
 }
@@ -99,12 +99,6 @@ header blockquote {
     font-weight: bold;
 }
 
-#nav_menu ul ul li a {
-    display: grid;
-    text-align: center;
-}
-
-
 #nav_menu a.current {
     color: orangered;
 }
@@ -134,14 +128,14 @@ article {
 }
 
 article h2 {
-    font-size: 3em;
+    font-size: 250%;
     padding: .25em 0 .25em 0;
     margin: 0;
 }
 
 article blockquote {
     color: orchid;
-    font-size: 4em;
+    font-size: 250%;
     text-align: center;
     padding: .75em;
     font-family: "Mynerve", sans-serif;
@@ -152,17 +146,17 @@ article blockquote {
 aside {
     padding: 0 3.7% 20px 8.3%;
     grid-row: 1 / 2;
-    grid-column: 1 / 2;
+    grid-column: 1 / 1;
 }
 
 aside h2 {
     color: var(--global-color-1);
-    font-size: 2em;
+    font-size: 130%;
     padding: .5em 0 .25em 0;
 }
 
 aside img {
-    padding-bottom: 1.25Sem;
+    padding-bottom: 1em;
     max-width: 100%;
 
 }
@@ -188,69 +182,49 @@ footer {
     display: none;
 }
 
-@media only screen and (max-width: 966px) {
-    header {
-        font-size: 90%;
-    }
-
-    header img {
-        height: 180px;
-    }
-
-    main {
-        display: flex;
-    }
-
-    article {
-        order: 2;
-        padding: 1.5%;
-    }
-
-    aside {
-        padding-top: 1%;
-        order: 1;
-        max-width: 200px;
-    }
-
-    aside img {
-        width: 100%;
-        height: auto;
-    }
+@media only screen and (max-width: 960px) {
 
     article h2,
     aside h2 {
-        font-size: 100%;
-        text-align: left;
+        font-size: 110%;
     }
 }
 
 @media only screen and (max-width: 900px) {
     header {
-        display: block;
+        text-align: center;
         font-size: 80%;
     }
 
     header img {
-        height: 160px;
+        max-width: 30%;
+        height: auto;
+
     }
 
     main {
-        flex-direction: column;
+        display: block;
     }
-
     article {
-        order: 1;
+        float: none;
         width: 95%;
-    }
-
-    main blockquote {
-        font-size: 3em;
+        padding-left: 2.5%;
     }
 
     aside {
-        order: 2;
-        padding-right: 2%;
+        float: none;
+        padding-right: 2.5%;
         width: 95%;
+    }
+
+    aside img {
+        max-width: 40%;
+        align-self: center;
+    }
+
+    aside h2 {
+        font-size: 200%;
+        padding-bottom: 2.5%;
     }
 
     #Cats {
@@ -280,10 +254,7 @@ footer {
     }
 
     main blockquote {
-        font-size: 2em;
+        font-size: 120%;
     }
 
-    #Cats {
-        width: 100%;
-    }
 }
