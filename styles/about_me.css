@@ -117,7 +117,7 @@ main i {
     text-align: center;
 }
 
-main section {
+main article {
     display: block;
     padding: 1em 1em;
 }
@@ -152,46 +152,33 @@ footer {
 }
 
 @media only screen and (max-width: 960px) {
-    main {
-        display: flex;
+
+    article h2 {
+        font-size: 110%;
     }
 
-    article {
-        order: 2;
-    }
-
-    aside {
-        order: 1;
-    }
-
-    article h2,
-    aside h2 {
-        font-size: 100%;
-    }
 }
 
 @media only screen and (max-width: 900px) {
-    header img {
-        float: none;
-    }
-
     header {
         text-align: center;
+        font-size: 80%;
+    }
+
+    header img {
+        max-width: 30%;
+        height: auto;
+
     }
 
     main {
-        flex-direction: column;
+        display: block;
     }
 
     article {
-        order: 1;
+        float: none;
         width: 95%;
-    }
-
-    aside {
-        order: 2;
-        padding-right: 2.5%;
-        width: 95%;
+        padding-left: 2.5%;
     }
 
     #Cats {
@@ -212,7 +199,15 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
+    header img {
+        display: none;
+    }
+
     body {
         font-size: 90%;
+    }
+
+    main blockquote {
+        font-size: 120%;
     }
 }

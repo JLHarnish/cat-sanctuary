@@ -99,12 +99,6 @@ header blockquote {
     font-weight: bold;
 }
 
-#nav_menu ul ul li a {
-    display: grid;
-    text-align: center;
-}
-
-
 #nav_menu a.current {
     color: orangered;
 }
@@ -163,45 +157,35 @@ footer {
 }
 
 @media only screen and (max-width: 960px) {
-    main {
-        display: flex;
-    }
-
-    article {
-        order: 2;
-    }
-
-    aside {
-        order: 1;
-    }
 
     article h2,
     aside h2 {
-        font-size: 100%;
+        font-size: 110%;
     }
 }
 
 @media only screen and (max-width: 900px) {
-    header img {
-        float: none;
-    }
-
     header {
         text-align: center;
+        font-size: 80%;
+    }
+
+    header img {
+        max-width: 30%;
+        height: auto;
+
     }
 
     main {
-        flex-direction: column;
+        display: block;
+    }
+    
+    main img {
+        max-width: 50%;
+        height: auto;
     }
 
     article {
-        order: 1;
-        width: 95%;
-    }
-
-    aside {
-        order: 2;
-        padding-right: 2.5%;
         width: 95%;
     }
 
@@ -218,8 +202,17 @@ footer {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 650px) {
+    header img {
+        display: none;
+    }
+
     body {
         font-size: 90%;
     }
+
+    main blockquote {
+        font-size: 120%;
+    }
+
 }

@@ -49,7 +49,7 @@ header {
 
 header img {
     float: left;
-    padding: 0 5%;
+    padding: 0 3.75%;
 }
 
 h1 {
@@ -99,33 +99,25 @@ header blockquote {
     font-weight: bold;
 }
 
-#nav_menu ul ul li a {
-    display: grid;
-    text-align: center;
-}
-
-
 #nav_menu a.current {
     color: orangered;
 }
 
 /*styles for the main*/
-main section {
-    display: block;
+main article {
     padding: .5em 1em;
-
+    float: left;
 }
 
-main section h2 {
+main article h2 {
     font-family: Mynerve, sans-serif;
 }
 
 /*styles for figure and caption*/
-
 figure {
-    float: right;
+    
     display: table;
-    margin: 0;
+    margin: 0 24%;
     padding: 1em;
 }
 
@@ -140,7 +132,6 @@ figcaption {
 table {
     border-collapse: collapse;
     border: 2px solid var(--global-color-1);
-
 }
 
 th,
@@ -177,30 +168,11 @@ footer {
     display: none;
 }
 
-@media only screen and (max-width: 966px) {
-    header {
-        font-size: 90%;
-    }
+@media only screen and (max-width: 960px) {
 
-    header img {
-        height: 180px;
-    }
-
-    main {
-        display: flex;
-    }
-
-    figure {
-        order: 2;
-    }
-
-    section {
-        order: 1;
-    }
-
-    footer {
-        order: 3;
-
+    article h2,
+    aside h2 {
+        font-size: 110%;
     }
 }
 
@@ -211,24 +183,12 @@ footer {
     }
 
     header img {
-        height: 160px;
+        max-width: 30%;
+        height: auto;
     }
-
+    
     main {
-        flex-direction: column;
-    }
-
-    article {
-        order: 1;
-        width: 95%;
-    }
-
-    aside {
-        order: 2;
-        padding-right: 2.5%;
-        width: 95%;
-    }
-
+        display: block;
     }
 
     #nav_menu {
@@ -244,8 +204,17 @@ footer {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 650px) {
+    header img {
+        display: none;
+    }
+
     body {
         font-size: 90%;
     }
+
+    main blockquote {
+        font-size: 120%;
+    }
+
 }

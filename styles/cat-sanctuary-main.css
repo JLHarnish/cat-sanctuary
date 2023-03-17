@@ -205,6 +205,7 @@ footer {
     main {
         display: block;
     }
+
     article {
         float: none;
         width: 95%;
@@ -219,10 +220,10 @@ footer {
 
     aside img {
         max-width: 40%;
-        align-self: center;
+        height: auto;
     }
 
-    aside h2 {
+    article h2 aside h2 {
         font-size: 200%;
         padding-bottom: 2.5%;
     }
