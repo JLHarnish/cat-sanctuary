@@ -124,7 +124,7 @@ main img {
     padding: 0.5em;
 }
 
-main section {
+main article {
     display: block;
     padding: .5em 1em;
 }
@@ -179,7 +179,7 @@ footer {
     main {
         display: block;
     }
-    
+
     main img {
         max-width: 50%;
         height: auto;
@@ -211,8 +211,8 @@ footer {
         font-size: 90%;
     }
 
-    main blockquote {
-        font-size: 120%;
+    article {
+        padding: 0 2.5%;
     }
 
 }
